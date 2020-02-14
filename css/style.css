@@ -1,0 +1,39 @@
+/*Usando flexbox em containers*/
+.container{
+	background-color: #ccc;
+	height: 500px;
+	display: flex;
+	flex-direction: row; /*column | row-reverse | column-reverse, indica direccao dos elementos*/
+	flex-wrap: nowrap;	/*wrap | nowrap | wrap-reverse, permite quebra ou não de linha*/
+	/*flex-flow: row nowrap;*/
+	justify-content: flex-start;/* Faz alinhamento do conteúdo horizontal*/
+	align-items: stretch; /* Faz alinhamento vertical*/
+	align-content: flex-start;
+}
+
+/*Usando flexbox nos items de containers*/
+.item{
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	margin: 5px;
+	height: 30px;
+	/*flex-grow: 1;/*Assume um tamanho que cresce*/
+	/*flex-basis: 300px;/*Assume um tamanho inicial*/
+	/*flex-shrink: 1;/*Assume um tamanho que reduz*/
+	flex: 10 1 300px ;/*É a forma resumida das três propriedades flex acima*/
+}
+
+.article-01{
+	/*order: 3;*/
+}
+
+.article-02{
+	/*align-self: center;*/
+}
+
+.article-03{
+}
+
+.article-04{
+}
